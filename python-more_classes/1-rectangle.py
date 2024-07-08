@@ -4,6 +4,7 @@ This module defines a Rectangle class with properties for width and height.
 The width and height must be integers and cannot be negative.
 """
 
+
 class Rectangle:
     """
     Represents a rectangle.
@@ -88,4 +89,3 @@ if __name__ == "__main__":
     my_rectangle.width = 10
     my_rectangle.height = 3
     print(my_rectangle.__dict__)
-
