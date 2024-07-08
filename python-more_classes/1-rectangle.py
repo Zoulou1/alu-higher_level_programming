@@ -1,44 +1,32 @@
 #!/usr/bin/python3
-"""
-This module defines a Rectangle class with width and height attributes.
-
-The Rectangle class allows for the instantiation of objects representing a rectangle,
-with optional width and height parameters, and includes property setters that enforce
-type and value constraints.
-"""
-
-
 class Rectangle:
     """
     A class used to represent a Rectangle.
 
-    Attributes
-    ----------
-    width : int
-        The width of the rectangle (default is 0)
-    height : int
-        The height of the rectangle (default is 0)
+    Attributes:
+        __width (int): The width of the rectangle (default is 0).
+        __height (int): The height of the rectangle (default is 0).
 
-    Methods
-    -------
-    width(self):
-        Gets the width of the rectangle.
-    width(self, value):
-        Sets the width of the rectangle, ensuring it is a non-negative integer.
-    height(self):
-        Gets the height of the rectangle.
-    height(self, value):
-        Sets the height of the rectangle, ensuring it is a non-negative integer.
+    Methods:
+        width(self):
+            Gets the width of the rectangle.
+        width(self, value):
+            Sets the width of the rectangle, ensuring it is a non-negative integer.
+        height(self):
+            Gets the height of the rectangle.
+        height(self, value):
+            Sets the height of the rectangle, ensuring it is a non-negative integer.
+        __init__(self, width=0, height=0):
+            Initializes a new Rectangle object with the given width and height.
     """
 
     def __init__(self, width=0, height=0):
         """
-        Parameters
-        ----------
-        width : int, optional
-            The width of the rectangle (default is 0)
-        height : int, optional
-            The height of the rectangle (default is 0)
+        Initializes a new Rectangle object with the given width and height.
+
+        Args:
+            width (int, optional): The width of the rectangle (default is 0).
+            height (int, optional): The height of the rectangle (default is 0).
         """
         self.width = width
         self.height = height
@@ -70,4 +58,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
