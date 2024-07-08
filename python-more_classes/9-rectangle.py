@@ -3,6 +3,7 @@
 Module for defining a Rectangle class with instance management
 """
 
+
 class Rectangle:
     """
     Rectangle class that defines a rectangle by width and height.
@@ -160,7 +161,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """
-        Class method that returns a new Rectangle instance 
+        Class method that returns a new Rectangle instance
 
         Args:
             size (int): Size of the square (default is 0).
