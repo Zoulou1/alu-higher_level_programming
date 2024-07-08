@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module defining a Rectangle class with width and height properties
+Module defining a Rectangle class with width and height properties,
+area and perimeter methods, and custom string representation.
 """
 
 
