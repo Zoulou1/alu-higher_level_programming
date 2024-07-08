@@ -122,16 +122,21 @@ class Rectangle:
         """
         return f'<{self.__class__.__name__}({self.width}, {self.height})>'
 
+# Testing the class
 if __name__ == "__main__":
-    my_rectangle = Rectangle(2, 4)
-    print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+    # Test cases
+    test_cases = [
+        Rectangle(2, 4),
+        Rectangle(2, 4),
+        Rectangle(2, 4),
+        Rectangle(0, 4),
+        Rectangle(2, 0),
+        Rectangle(0, 0)
+    ]
 
-    print(str(my_rectangle))
-    print(repr(my_rectangle))
-
-    print("--")
-
-    my_rectangle.width = 10
-    my_rectangle.height = 3
-    print(my_rectangle)
-    print(repr(my_rectangle))
+    for index, rect in enumerate(test_cases):
+        print(f"Case {index + 1}:")
+        print(str(rect))
+        print(repr(rect))
+        print(rect)
+        print("--")
