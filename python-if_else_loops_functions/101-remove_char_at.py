@@ -8,6 +8,6 @@ def remove_char_at(s, n):
 if __name__ == "__main__":
     print(remove_char_at("Best School", 3))  # Bes School
     print(remove_char_at("Chicago", 2))      # Chcago
-    print(remove_char_at("C is fun!", 0))    #  is fun!
+    print(remove_char_at("C is fun!", 0))    # is fun!
     print(remove_char_at("School", 10))      # School
     print(remove_char_at("Python", -2))      # Python
