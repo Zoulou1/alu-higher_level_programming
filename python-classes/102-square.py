@@ -12,7 +12,8 @@ class Square:
         Initializes the square with a given size.
 
         Args:
-            size (float or int, optional): The size of the square. Defaults to 0.
+            size (float or int, optional): The size of the square. Defaults to
+            0.
         """
         self.size = size
 
@@ -69,21 +70,4 @@ class Square:
 
     def __le__(self, other):
         """
-        Checks if this square is less than or equal to another square based on 
-        their area.
-        """
-        return self.area() <= other.area()
-
-    def __gt__(self, other):
-        """
-        Checks if this square is greater than another square based on their 
-        area.
-        """
-        return self.area() > other.area()
-
-    def __ge__(self, other):
-        """
-        Checks if this square is greater than or equal to another square based 
-        on their area.
-        """
-        return self.area() >= other.area()
+        Checks if this square is
