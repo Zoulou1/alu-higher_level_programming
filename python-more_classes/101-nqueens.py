@@ -8,15 +8,18 @@ N×N chessboard.
 
 import sys
 
+
 def print_usage_and_exit():
     """Prints usage message and exits with status 1."""
     print("Usage: nqueens N")
     sys.exit(1)
 
+
 def print_invalid_number_message_and_exit(message):
     """Prints the invalid number message and exits with status 1."""
     print(message)
     sys.exit(1)
+
 
 def is_valid(board, row, col):
     """Checks if it's safe to place a queen at board[row][col]."""
@@ -26,6 +29,7 @@ def is_valid(board, row, col):
            board[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(N, board=[], row=0):
     """Recursively solves the N queens puzzle."""
@@ -37,6 +41,7 @@ def solve_nqueens(N, board=[], row=0):
             board.append(col)
             solve_nqueens(N, board, row + 1)
             board.pop()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
