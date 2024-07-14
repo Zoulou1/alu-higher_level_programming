@@ -9,8 +9,7 @@ def write_file(filename="", text=""):
     """Writes a string to a text file (UTF8) and returns the number
     Args:
         filename (str): The name of the file to write
-        text (str): The string to write to the file
-    
+        text (str): The string to write to the file  
     Returns:
         int: The number of characters written to the file.
     """
