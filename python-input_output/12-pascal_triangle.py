@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module: 12-pascal_triangle
-Defines a function that returns a list of lists of integers representing 
+Defines a function that returns a list of lists of integers representing
 Pascal's triangle.
 """
 
@@ -25,7 +25,6 @@ def pascal_triangle(n):
             row.append(triangle[i-1][j-1] + triangle[i-1][j])
         row.append(1)
         triangle.append(row)
-    
     return triangle
 
 # Example usage
