@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module: 9-student
+Defines a Student class with attributes and methods for JSON serialization.
+"""
+
 class Student:
     """
     Defines a student by first name, last name, and age.
