@@ -1,13 +1,13 @@
 #!/usr/bin/node
+const data = require('./101-data').dict;
 
-const inputDictionary = require('./101-data').dict;
+const newDict = {};
 
-const reversedDictionary = {};
-for (const [key, value] of Object.entries(inputDictionary)) {
-  if (reversedDictionary[value] === undefined) {
-    reversedDictionary[value] = [key];
-  } else {
-    reversedDictionary[value].push(key);
+for (const [userId, occurrences] of Object.entries(data)) {
+  if (!newDict[occurrences]) {
+    newDict[occurrences] = [];
   }
+  newDict[occurrences].push(userId);
 }
-console.log(reversedDictionary);
+
+console.log(newDict);
